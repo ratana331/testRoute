@@ -17,5 +17,9 @@ namespace firstproject.Controllers
         {
             return File(Server.MapPath("~/Content/test.txt"), "test/pain", "kim.txt");
         }
+        public RedirectResult ShowInternal()
+        {
+            return Redirect("https://google.com/");
+        }
     }
 }
